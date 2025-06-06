@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+#random
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.db-lock
+*.db-trace
+*.db-trace-lock
+
 # Distribution / packaging
 .Python
 build/
@@ -192,3 +201,29 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# React
+node_modules/
+/build
+/dist
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+coverage/
+
+# Project specific
+stage*/**/node_modules/
+stage*/**/build/
+stage*/**/dist/
+stage*/**/.env*
+stage*/**/coverage/
+stage*/**/.cache/
+stage*/**/package-lock.json
+stage*/**/yarn.lock
+stage*/**/.DS_Store
+stage*/**/Thumbs.db
